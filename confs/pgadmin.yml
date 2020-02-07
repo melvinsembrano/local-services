@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: melvinsembrano@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: 1234Qwer
+
+    ports:
+      - "8888:80"
+
