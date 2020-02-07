@@ -4,11 +4,10 @@ services:
 
   mssql:
     image: microsoft/mssql-server-linux
-    restart: always
     environment:
       HOMEBREW_NO_ENV_FILTERING: 1
-      ACCEPT_EULA: Y
-      SA_PASSWORD: 1234Qwer
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "1234Qwer"
 
     volumes:
       - mssql_data:/var/opt/mssql/data
