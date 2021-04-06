@@ -4,9 +4,8 @@ services:
 
   postgis:
     image: postgis/postgis:13-3.1-alpine
-    restart: always
     environment:
-      POSTGRES_PASSWORD: !234Qwer
+      POSTGRES_PASSWORD: Password!2345
     volumes:
       - db_data:/var/lib/postgresql/data
 
